@@ -5,9 +5,9 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "run-p type-check \"build-only {@}\" --",
-        "preview": "vite preview",
+        "build": "concurrently \"npm run type-check \"build-only {@}\" --",
         "build-only": "vite build",
+        "preview": "vite preview",
         "type-check": "vue-tsc",
         "lint:format": "prettier --cache --check .",
         "lint:style": "stylelint --max-warnings 0 --ignore-path .gitignore \"**/*.{css,scss,vue,vuex}\"",
