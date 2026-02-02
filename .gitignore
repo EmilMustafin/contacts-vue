@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+bun.lock
+
 
 node_modules
 .DS_Store
@@ -28,3 +30,5 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+vitest.config.ts.timestamp-*.mjs
